@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { SMTPMailService } from './mail/smtp-mail.service';
+import { PrismaService } from './prisma.service';
 
 @Module({
   imports: [],
   controllers: [AppController],
-  providers: [SMTPMailService],
+  providers: [PrismaService],
 })
 export class AppModule {}
